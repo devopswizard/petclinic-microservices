@@ -5,6 +5,10 @@ filters:
   tag:app-stack-name: APP_STACK_NAME
   tag:environment: dev
   tag:swarm-role: grand-master
+keyed_groups:
+  - key: tags['swarm-role']
+    prefix: 'role_'
+    separator: ''
 hostnames:
   - "private-ip-address"
 compose:
