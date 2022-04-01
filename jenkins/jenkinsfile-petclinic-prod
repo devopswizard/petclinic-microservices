@@ -84,7 +84,7 @@ pipeline {
     }
     post {
         always {
-            echo 'Deleting all local images' #note1
+            echo 'Deleting all local images'
             sh 'docker image prune -af'
         }
     }
